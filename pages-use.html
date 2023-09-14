@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>user</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <span class="d-none d-lg-block">TesT</span>
+      </a>
+
+    </div>
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <span class="d-none d-md-block dropdown-toggle ps-2">TEST</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>TEST</h6>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+    </nav>
+
+  </header>
+
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html"><i class="bi bi-person-fill"style="color:#FFFFFF;"></i>
+          <span>Profile</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" style="background-color: #5b1b8f;" href="pages-use.html"><i class="bi bi-people-fill"style="color:#FFFFFF;" blackg></i>
+          <span>Users</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-control.html"><i class="bi bi-toggles"style="color:#FFFFFF;"></i>
+          <span>Control Panel</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="###"><i class="bi bi-calendar4"style="color:#FFFFFF;"></i>
+          <span>Projects</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="###"><i class="bi bi-folder-fill"style="color:#FFFFFF;"></i>
+          <span>Tasks</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="###"><i class="bi bi-box-arrow-right"style="color:#FFFFFF;"></i>
+          <span>Logs</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="###"><i class="bi bi-chat-dots"style="color:#FFFFFF;"></i>
+          <span>Group chats</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="###"><i class="bi bi-flag"style="color:#FFFFFF;"></i>
+          <span>Reports</span>
+        </a>
+      </li>
+  </aside>
+
+  <main id="main" class="main">
+    <button type="button" class="btn btn-default">Members</button>&nbsp;&nbsp;<button type="button" class="btn btn-default">Admins</button>
+    <table class="table user-list">
+    <div class="container bootstrap snippets bootdey">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-box no-header clearfix">
+                    <div class="main-box-body clearfix">
+                        <div class="table-responsive">
+                            
+                                <thead>
+                                    <tr>
+                                      <h1>Members  <button type="button" class="btn btn-primary">Add new</button>&nbsp;&nbsp;<button type="button" class="btn btn-default"></buttontype>Import members</button>&nbsp;&nbsp;<button type="button" class="btn btn-default"></buttontype>Export members (Excel)</button></h1>
+                                    <th><span>Photo</span></th>
+                                    <th><span>Member name</span></th>
+                                    <th><span>Mobile</span></th>
+                                    <th><span>Email</span></th>
+                                    <th class="text-center"><span>Status</span></th>
+                                    <th><span>Operation</span></th>
+                                    <th><span>Action</span></th>
+                                    <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="https://kawtung.com/images/2022/10/kawtung.com_08edab4b574c4df6b294fb4e0a3410ff.jpeg" alt="" height="100" width="100">
+                                            <td>name a</td>
+                                        </td>
+                                        <td>09999999999</td>
+                                        <td>
+                                          a@gmail.com
+                                      </td>
+                                        <td class="text-center">
+                                            <span class="label label-success">Active</span>
+                                        </td>
+                                        
+                                        <td style="width: 20%;">
+                                          <a href="#" class="table-link  text-warning">
+                                            <span class="fa-stack">
+                                              <i class="bi bi-journal"style="color:rgb(104, 3, 172);"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="table-link  text-info">
+                                            <span class="fa-stack">
+                                              <i class="bi bi-pencil"style="color:rgb(104, 3, 172);"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="table-link danger">
+                                            <span class="fa-stack">
+                                              <i class="bi bi-trash"style="color:rgb(104, 3, 172);"></i>    
+                                            </span>
+                                        </a>
+                                        </td>
+                                        <td><button type="button" class="btn btn-primary">Login</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://storage.googleapis.com/fastwork-static/5bae6b50-7805-4ff0-bfb0-cc22496ef531.jpg" alt="" height="100" width="100">
+                                            <td>name b</td>
+                                        </td>
+                                        <td>0888888888</td>
+                                        <td>
+                                          b@gmail.com
+                                      </td>
+                                        <td class="text-center">
+                                            <span class="label label-success">Active</span>
+                                        </td>
+                                        <td style="width: 20%;">
+                                            <a href="#" class="table-link  text-warning">
+                                                <span class="fa-stack">
+                                                  <i class="bi bi-journal"style="color:rgb(104, 3, 172);"></i>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="table-link  text-info">
+                                                <span class="fa-stack">
+                                                  <i class="bi bi-pencil"style="color:rgb(104, 3, 172);"></i>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="table-link danger">
+                                                <span class="fa-stack">
+                                                  <i class="bi bi-trash"style="color:rgb(104, 3, 172);"></i>    
+                                                </span>
+                                            </a>
+                                        </td>
+                                        <td><button type="button" class="btn btn-primary">Login</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://storage.googleapis.com/fastwork-static/c1762224-8502-463c-a00b-70d8dfa33cdd.jpg" alt="" height="100" width="100">
+                                            <td>name c</td>
+                                        </td>
+                                        <td>07777777777</td>
+                                        <td>
+                                          c@gmail.com
+                                      </td>
+                                        <td class="text-center">
+                                            <span class="label label-danger">inactive</span>
+                                        </td>
+                                        <td style="width: 20%;">
+                                          <a href="#" class="table-link  text-warning">
+                                            <span class="fa-stack">
+                                              <i class="bi bi-journal"style="color:rgb(104, 3, 172);"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="table-link  text-info">
+                                            <span class="fa-stack">
+                                              <i class="bi bi-pencil"style="color:rgb(104, 3, 172);"></i>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="table-link danger">
+                                            <span class="fa-stack">
+                                              <i class="bi bi-trash"style="color:rgb(104, 3, 172);"></i>    
+                                            </span>
+                                        </a>
+                                        </td>
+                                        <td><button type="button" class="btn btn-primary">Login</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
